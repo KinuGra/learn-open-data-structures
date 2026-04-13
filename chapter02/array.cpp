@@ -51,5 +51,14 @@ int main() {
   }
   std::cout << std::endl;
 
-  // TODO: 自作arrayクラスを使う
+  array<int> a(3);
+  a[0] = 1;
+  a[1] = 2;
+  a[2] = 3;
+
+  arr = a; // aの中身をarrに移す
+  // この後、aが持っていたデータにアクセスできる。aはもう使えない。
+  for (int i = 0; i < 3; i++) {
+    std::cout << arr[i] << std::endl;
+  }
 }
